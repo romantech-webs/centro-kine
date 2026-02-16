@@ -1,307 +1,343 @@
 export const clinic = {
-  // === IDENTIDAD ===
-  name: "Centro Estética CyM",
-  logo: "/images/logo.jpg" as string | null,
-  tagline: "Tu Centro de Belleza en Puertollano",
-  description: "Centro Estética CyM es un centro de belleza integral en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados para realzar tu belleza natural.",
-
-  // === PALETA (Elegante/Spa) ===
+  name: "Centro Kine",
+  logo: "/images/logo.png",
+  tagline: "Fisioterapia especializada en Ciudad Real",
+  description: "Centro Kine es tu clínica de fisioterapia especializada en Ciudad Real, con valoración de 5 estrellas en Google. Dirigida por Mercedes, fisioterapeuta experta en suelo pélvico, preparación al parto, drenaje linfático y técnicas manuales avanzadas. Ofrecemos tratamientos personalizados con tecnología de diagnóstico preciso y un enfoque cercano que garantiza resultados desde la primera sesión.",
   colors: {
-    primary: "#C9A86C",      // Dorado elegante
-    secondary: "#2D2D2D",    // Gris sofisticado
-    accent: "#D4A574",       // Rosa champán
-    neutral: "#FAF8F5",      // Crema cálido
+    primary: "#0964ff",
+    secondary: "#031e4d",
+    accent: "#005aff",
+    neutral: "#ebf3ff"
   },
-
-  // === CONTACTO ===
-  phone: "629 61 04 71",
-  whatsapp: "+34629610471",
-  whatsappMessage: "Hola, me gustaría solicitar información sobre vuestros tratamientos de estética.",
-  email: "info@esteticacym.es",
-
-  // === UBICACIÓN ===
+  phone: "600 07 15 36",
+  whatsapp: "+34600071536",
+  whatsappMessage: "Hola, me gustaría solicitar información sobre vuestros tratamientos de fisioterapia.",
+  email: "",
   address: {
-    street: "C. Numancia, 40",
-    city: "Puertollano",
-    province: "Ciudad Real",
-    postalCode: "13500",
-    country: "España",
+    street: "C. Virgen de Gracia, 51, 13200 Manzanares, Ciudad Real, España",
+    city: "Ciudad Real",
+    province: "Toledo",
+    postalCode: "13200",
+    country: "España"
   },
-  googleMapsUrl: "https://maps.google.com/?q=C.+Numancia+40+Puertollano",
-  googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.5!2d-4.1078!3d38.6872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6d1f1a8a8a8a8a%3A0x0!2sC.+Numancia%2C+40%2C+13500+Puertollano!5e0!3m2!1ses!2ses!4v1",
-  coordinates: { lat: 38.6872, lng: -4.1078 },
-
-  // === HORARIOS ===
+  googleMapsUrl: "https://maps.google.com/?cid=16138950971573434751&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  googleMapsEmbed: "https://maps.google.com/maps?q=Centro%20Kine%20%4039.0001%2C-3.36923&z=16&output=embed",
+  coordinates: {
+    lat: 39.0001,
+    lng: -3.36923
+  },
   schedule: [
-    { days: "Lunes - Viernes", hours: "10:00 - 20:00" },
-    { days: "Sábado", hours: "Cerrado" },
-    { days: "Domingo", hours: "Cerrado" },
+    {
+      days: "lunes - viernes",
+      hours: "9:00–20:00"
+    },
+    {
+      days: "sábado - domingo",
+      hours: "Cerrado"
+    }
   ],
-
-  // === REDES SOCIALES ===
   social: {
-    instagram: "https://www.instagram.com/centrodeesteticacym/",
-    facebook: "https://www.facebook.com/centrodeesteticacym/",
-    linkedin: null as string | null,
-    tiktok: null as string | null,
+    instagram: null,
+    facebook: null,
+    linkedin: null,
+    tiktok: null
   },
-
-  // === RESEÑAS GOOGLE ===
   reviews: {
-    rating: 4.7,
-    count: 190,
-    url: "#",
+    rating: 5,
+    count: 20,
+    url: "https://maps.google.com/?cid=16138950971573434751&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     featured: [
       {
-        author: "Eva León",
+        author: "Alba Lm",
         rating: 5,
-        text: "Increíble trabajo de micropigmentación. El resultado es muy natural y el trato inmejorable. Sin duda volveré para más tratamientos.",
-        date: "hace 2 semanas",
+        text: "Mercedes es súper profesional.\nEstoy en mi tercer trimestre de embarazo y me recomendaron la preparación con ella y estoy encantada. Adapta cada sesión a la persona, te aconseja y te guía de manera super clara. Ademas sus clases son divertidas y el tiempo que pasas es genial!\nElla es una chica muy agradable y sabe muy bien de su trabajo!!\n¡Sin duda repetiré mil veces mas!",
+        date: "Hace 11 meses"
       },
       {
-        author: "Javier Padilla",
+        author: "Judith-Delfina Aparicio Sanchez-Maroto",
         rating: 5,
-        text: "Excelente profesionalidad en todos los tratamientos. Las instalaciones son muy modernas y el ambiente muy relajante.",
-        date: "hace 1 mes",
+        text: "Tengo problemas de retención de líquidos por lo que necesito que me realicen drenajes linfáticos periódicamente. Por experiencia sé que es muy difícil encontrar a alguien que los haga bien pero Mercedes es excelente con estos tratamientos. Además es muy divertida y agradable, algo que siempre es un plus. Estoy muy agradecida.",
+        date: "Hace 2 años"
       },
       {
-        author: "Melanie Ponce",
+        author: "Natalia Diaz-Cano Gomez-Pimpollo",
         rating: 5,
-        text: "Me encantó el resultado del microblading. Quedé muy satisfecha con el trabajo realizado. Muy recomendable.",
-        date: "hace 1 mes",
+        text: "Muy muy recomendable. Trato excepcional, cercano y sobre todo profesionalidad. Muy buen manejo de las técnicas manuales, gran conocimiento en diversas ramas de la fisioterapia con explicaciones sencillas y completas. Cuenta también con varias máquinas para dar un diagnóstico preciso. Muchas gracias por todo Mercedes! 😁",
+        date: "Hace 6 meses"
       },
       {
-        author: "María Teresa Salguero",
+        author: "Alexandra Lopez",
         rating: 5,
-        text: "El mejor centro de estética de Puertollano. Tratamientos de calidad y atención personalizada. Volveré seguro.",
-        date: "hace 2 meses",
+        text: "Acabo de terminar la cuarentena y he ido a revisar mi suelo pélvico y los puntos del parto, tenía miedo a empezar a trabajarlo y ha sido todo un acierto ir, he mejorado desde el primer momento. La profesionalidad y especialización de Mercedes es espectacular. Muchas gracias por todo.",
+        date: "Hace 4 años"
       },
-    ],
+      {
+        author: "Mamen Ruiz",
+        rating: 5,
+        text: "Estuve hace unas semanas por un dolor de espalda que tengo de forma recurrente, después de haber visitado varios centros en Córdoba donde resido habitualmente,  ha sido en CENTRO KINE donde tras una sola  sesión me han resuelto mi problema. Trato excelente. Lo recomiendo 100%.",
+        date: "Hace 6 meses"
+      }
+    ]
   },
-
-  // === SERVICIOS ===
   services: [
     {
-      id: "micropigmentacion",
-      name: "Micropigmentación",
-      description: "Técnica avanzada de maquillaje semipermanente para cejas, labios y ojos. Resultados naturales y duraderos que realzan tu belleza.",
-      benefits: ["Resultados naturales", "Larga duración", "Mínimo mantenimiento"],
-      icon: "Sparkles",
+      id: "suelo-pelvico",
+      name: "Fisioterapia de Suelo Pélvico",
+      description: "Tratamiento especializado para disfunciones del suelo pélvico en todas las etapas de la vida. Valoración postparto, recuperación de cesáreas y partos, incontinencia urinaria y problemas pélvicos. Trabajamos con técnicas manuales avanzadas y seguimiento personalizado para una recuperación completa y segura.",
+      benefits: [
+        "Recuperación postparto efectiva desde la primera sesión",
+        "Tratamiento de incontinencia y disfunciones pélvicas",
+        "Valoración profesional con tecnología de diagnóstico preciso"
+      ],
+      icon: "Heart"
     },
     {
-      id: "microblading",
-      name: "Microblading de Cejas",
-      description: "Técnica pelo a pelo para cejas perfectamente definidas. Efecto hiperrealista que simula el vello natural.",
-      benefits: ["Efecto pelo a pelo", "Cejas definidas", "Aspecto natural"],
-      icon: "Feather",
+      id: "preparacion-parto",
+      name: "Preparación al Parto",
+      description: "Sesiones adaptadas a cada trimestre de embarazo para preparar tu cuerpo de forma óptima. Trabajamos el suelo pélvico, la respiración y técnicas específicas para un parto más consciente y controlado. Clases divertidas y personalizadas donde te guiamos de manera clara en cada etapa.",
+      benefits: [
+        "Sesiones adaptadas a tu trimestre y necesidades específicas",
+        "Preparación física y mental para el momento del parto",
+        "Ambiente agradable con profesional especializada"
+      ],
+      icon: "Heart"
     },
     {
-      id: "depilacion-laser",
-      name: "Depilación Láser",
-      description: "Eliminación definitiva del vello con tecnología láser de última generación. Tratamientos seguros y efectivos.",
-      benefits: ["Resultados permanentes", "Sin dolor", "Piel suave"],
-      icon: "Zap",
+      id: "drenaje-linfatico",
+      name: "Drenaje Linfático Manual",
+      description: "Técnica manual especializada para tratar la retención de líquidos y mejorar la circulación linfática. Realizamos drenajes terapéuticos con maniobras precisas y efectivas, perfectos para piernas cansadas, postoperatorios y problemas circulatorios. Tratamiento relajante con resultados inmediatos.",
+      benefits: [
+        "Reducción efectiva de retención de líquidos",
+        "Mejora visible de la circulación desde la primera sesión",
+        "Técnica manual experta difícil de encontrar bien ejecutada"
+      ],
+      icon: "Activity"
     },
     {
-      id: "tratamientos-faciales",
-      name: "Tratamientos Faciales",
-      description: "Cuidados personalizados para cada tipo de piel. Hidratación profunda, antiedad y luminosidad para un rostro radiante.",
-      benefits: ["Piel rejuvenecida", "Hidratación profunda", "Luminosidad"],
-      icon: "Flower2",
+      id: "fisioterapia-manual",
+      name: "Fisioterapia Manual Avanzada",
+      description: "Técnicas manuales especializadas para el tratamiento del dolor de espalda, contracturas y problemas musculoesqueléticos. Gran dominio de técnicas manuales con explicaciones claras y sencillas sobre tu problema. Resolvemos dolores recurrentes que otros centros no han conseguido tratar.",
+      benefits: [
+        "Resultados desde la primera sesión en dolores crónicos",
+        "Explicaciones completas y comprensibles de tu problema",
+        "Técnicas manuales expertas y precisas"
+      ],
+      icon: "Hand"
     },
     {
-      id: "tratamientos-corporales",
-      name: "Tratamientos Corporales",
-      description: "Tratamientos reductores, reafirmantes y anticelulíticos. Moldea tu silueta con las técnicas más avanzadas.",
-      benefits: ["Reduce centímetros", "Reafirma la piel", "Elimina celulitis"],
-      icon: "Heart",
+      id: "tratamiento-dolor",
+      name: "Tratamiento del Dolor",
+      description: "Abordaje integral del dolor crónico y agudo mediante técnicas manuales avanzadas y tecnología terapéutica. Tratamos dolores de espalda recurrentes, cervicalgias, lumbalgias y contracturas musculares. Diagnóstico preciso con equipos especializados para identificar el origen del problema.",
+      benefits: [
+        "Solución efectiva para dolores recurrentes",
+        "Diagnóstico preciso con tecnología avanzada",
+        "Tratamiento personalizado según tu patología"
+      ],
+      icon: "Target"
     },
     {
-      id: "manicura-pedicura",
-      name: "Manicura y Pedicura",
-      description: "Cuidado completo de manos y pies con esmaltes de alta calidad. Uñas perfectas con diseños personalizados.",
-      benefits: ["Uñas perfectas", "Manos cuidadas", "Diseños exclusivos"],
-      icon: "Hand",
+      id: "rehabilitacion",
+      name: "Rehabilitación Personalizada",
+      description: "Programas de rehabilitación diseñados específicamente para tu lesión o patología. Combinamos técnicas manuales, ejercicio terapéutico y tecnología para acelerar tu recuperación. Seguimiento continuo con adaptación del tratamiento según tu evolución.",
+      benefits: [
+        "Plan de tratamiento adaptado a tu evolución",
+        "Combinación de técnicas para mejores resultados",
+        "Seguimiento profesional hasta tu recuperación completa"
+      ],
+      icon: "Activity"
     },
     {
-      id: "extensiones-pestanas",
-      name: "Extensiones de Pestañas",
-      description: "Mirada impactante con extensiones de pestañas pelo a pelo. Efecto natural o dramático según tu preferencia.",
-      benefits: ["Mirada intensa", "Efecto natural", "Sin máscara"],
-      icon: "Eye",
+      id: "fisioterapia-deportiva",
+      name: "Fisioterapia Deportiva",
+      description: "Prevención y tratamiento de lesiones deportivas con técnicas especializadas. Recuperación de esguinces, sobrecargas, tendinitis y lesiones musculares. Trabajamos para que vuelvas a tu actividad deportiva de forma segura y en el menor tiempo posible.",
+      benefits: [
+        "Recuperación rápida y segura de lesiones deportivas",
+        "Prevención de recaídas con pautas personalizadas",
+        "Vuelta progresiva a tu actividad física"
+      ],
+      icon: "Dumbbell"
     },
     {
-      id: "maquillaje-profesional",
-      name: "Maquillaje Profesional",
-      description: "Maquillaje para eventos especiales, novias y sesiones fotográficas. Realza tu belleza para cada ocasión.",
-      benefits: ["Look personalizado", "Alta duración", "Acabado profesional"],
-      icon: "Palette",
-    },
+      id: "electroterapia",
+      name: "Electroterapia y Tecnología Avanzada",
+      description: "Tecnología de vanguardia para complementar el tratamiento manual. Utilizamos equipos de diagnóstico preciso y corrientes terapéuticas para acelerar la recuperación y reducir el dolor. Tratamientos no invasivos y efectivos.",
+      benefits: [
+        "Diagnóstico preciso con equipos especializados",
+        "Aceleración del proceso de recuperación",
+        "Complemento perfecto al tratamiento manual"
+      ],
+      icon: "Zap"
+    }
   ],
-
-  // === PROCESO ===
   process: [
     {
       step: 1,
-      title: "Contacta",
-      description: "Solicita tu cita de consulta inicial por teléfono o WhatsApp",
+      title: "Contacta con Nosotros",
+      description: "Llámanos al 600 07 15 36 o escríbenos por WhatsApp. Te atenderemos personalmente para conocer tu situación y agendar tu cita de valoración en el horario que mejor te venga."
     },
     {
       step: 2,
-      title: "Consulta",
-      description: "Analizamos tus necesidades y diseñamos el tratamiento ideal para ti",
+      title: "Valoración Profesional",
+      description: "Mercedes realizará una evaluación completa de tu caso utilizando técnicas de diagnóstico preciso. Te explicaremos de forma clara y sencilla qué te ocurre y diseñaremos un plan de tratamiento adaptado a tus necesidades específicas."
     },
     {
       step: 3,
-      title: "Tratamiento",
-      description: "Realizamos el tratamiento con las técnicas más avanzadas y productos de calidad",
+      title: "Tratamiento Personalizado",
+      description: "Aplicamos las técnicas manuales más adecuadas y tecnología avanzada para tu recuperación. Cada sesión se adapta a tu evolución, con explicaciones completas sobre lo que hacemos y por qué lo hacemos."
     },
     {
       step: 4,
-      title: "Resultados",
-      description: "Disfruta de resultados espectaculares y un seguimiento personalizado",
-    },
+      title: "Recuperación y Seguimiento",
+      description: "Te acompañamos durante todo el proceso con seguimiento continuo hasta tu completa recuperación. Te damos pautas y consejos para mantener los resultados y prevenir futuras recaídas."
+    }
   ],
-
-  // === POR QUÉ ELEGIRNOS ===
   whyUs: [
     {
-      title: "Especialistas en Micropigmentación",
-      description: "Técnicas avanzadas de micropigmentación y microblading con resultados naturales y duraderos",
-      icon: "Award",
+      title: "Valoración 5 Estrellas en Google",
+      description: "Con 20 reseñas que destacan nuestra profesionalidad, trato cercano y resultados desde la primera sesión. Nuestras clientas confirman que resolvemos problemas que otros centros no han conseguido tratar, gracias a nuestro dominio excepcional de técnicas manuales avanzadas.",
+      icon: "Heart"
     },
     {
-      title: "Tecnología de Vanguardia",
-      description: "Equipos de última generación para tratamientos más efectivos y seguros",
-      icon: "Cpu",
+      title: "Especialización en Fisioterapia de la Mujer",
+      description: "Mercedes es experta en suelo pélvico, preparación al parto, recuperación postparto y drenaje linfático. Áreas especializadas donde la técnica y experiencia marcan la diferencia. Sesiones personalizadas, adaptadas a cada trimestre o fase de recuperación, con explicaciones claras y ambiente agradable.",
+      icon: "Heart"
     },
     {
-      title: "Atención Personalizada",
-      description: "Cada clienta recibe un tratamiento único adaptado a sus necesidades y deseos",
-      icon: "UserCheck",
+      title: "Técnicas Manuales Expertas",
+      description: "Gran dominio y manejo de técnicas manuales que garantizan resultados efectivos. Tratamos dolores crónicos, contracturas y lesiones con maniobras precisas difíciles de encontrar bien ejecutadas. Te explicamos de forma sencilla y completa qué te ocurre y cómo te ayudamos a solucionarlo.",
+      icon: "Hand"
     },
     {
-      title: "Valoración 4.7 Estrellas",
-      description: "190 clientas satisfechas nos avalan con excelentes valoraciones en Google",
-      icon: "Star",
-    },
+      title: "Tecnología de Diagnóstico Preciso",
+      description: "Combinamos la experiencia manual con equipos avanzados de diagnóstico para identificar con exactitud el origen de tu problema. Esta tecnología nos permite diseñar tratamientos más efectivos y hacer seguimiento objetivo de tu evolución, garantizando los mejores resultados terapéuticos.",
+      icon: "Zap"
+    }
   ],
-
-  // === EQUIPO ===
   team: [
     {
-      name: "Centro Estética CyM",
-      role: "Especialistas en Micropigmentación",
+      name: "Mercedes",
+      role: "Fisioterapeuta Especialista",
       image: "/images/team/placeholder.jpg",
-      bio: "Profesionales apasionadas por la belleza y el cuidado personal. Con años de experiencia en micropigmentación, microblading y tratamientos estéticos, nos dedicamos a realzar la belleza natural de cada clienta.",
-    },
+      bio: "Profesionales apasionados por la fisioterapia y la rehabilitación. En Centro Kine nos dedicamos a devolver la calidad de vida a nuestros pacientes con tratamientos personalizados y tecnología avanzada."
+    }
   ],
-
-  // === GALERÍA ===
   gallery: [
-    { src: "/images/gallery/local-fuera.webp", alt: "Fachada del Centro Estética CyM" },
-    { src: "/images/gallery/local-dentro.webp", alt: "Interior del centro - Recepción" },
-    { src: "/images/gallery/clinica-dentro1.webp", alt: "Sala de tratamientos" },
+    {
+      src: "/images/hero.webp",
+      alt: "Centro Kine - Imagen 1"
+    },
+    {
+      src: "/images/gallery/2.webp",
+      alt: "Centro Kine - Imagen 2"
+    },
+    {
+      src: "/images/gallery/3.webp",
+      alt: "Centro Kine - Imagen 3"
+    },
+    {
+      src: "/images/gallery/4.webp",
+      alt: "Centro Kine - Imagen 4"
+    },
+    {
+      src: "/images/gallery/5.webp",
+      alt: "Centro Kine - Imagen 5"
+    }
   ],
-
-  // === FAQ ===
   faq: [
     {
-      question: "¿Cuánto dura la micropigmentación?",
-      answer: "La micropigmentación puede durar entre 1 y 3 años dependiendo del tipo de piel, cuidados posteriores y la zona tratada. Ofrecemos retoques para mantener el resultado óptimo.",
+      question: "¿Cuándo debo acudir a fisioterapia de suelo pélvico después del parto?",
+      answer: "En Centro Kine recomendamos realizar una valoración del suelo pélvico después de la cuarentena, aproximadamente a las 6-8 semanas del parto. Es fundamental revisar el estado de los puntos, la musculatura y detectar posibles disfunciones antes de retomar la actividad física. Muchas clientas mejoran desde el primer momento con nuestro tratamiento especializado, tanto si ha sido parto vaginal como cesárea."
     },
     {
-      question: "¿Es doloroso el microblading de cejas?",
-      answer: "El procedimiento es prácticamente indoloro gracias a la aplicación de crema anestésica tópica. La mayoría de clientas describen la sensación como un ligero cosquilleo.",
+      question: "¿Cómo sé si los drenajes linfáticos están bien hechos?",
+      answer: "Un drenaje linfático bien realizado debe ser suave, con maniobras específicas y ritmo lento, siguiendo el recorrido del sistema linfático. En Centro Kine, Mercedes está especializada en esta técnica y muchas clientas con experiencia previa confirman la excelencia del tratamiento. Notarás reducción de la hinchazón, sensación de ligereza y mejora visible desde la primera sesión. Es una técnica difícil de dominar y por eso es importante acudir con profesionales expertos."
     },
     {
-      question: "¿Cuántas sesiones necesito para la depilación láser?",
-      answer: "Generalmente se necesitan entre 6 y 8 sesiones espaciadas cada 4-6 semanas para obtener resultados óptimos. El número exacto depende del tipo de piel y vello.",
+      question: "¿Desde qué mes de embarazo puedo empezar la preparación al parto?",
+      answer: "En Centro Kine adaptamos las sesiones de preparación al parto a cada trimestre de embarazo. Puedes comenzar en cualquier momento, aunque muchas embarazadas inician en el segundo o tercer trimestre. Mercedes personaliza cada sesión según tu estado, semana de gestación y necesidades específicas. Las clases son divertidas, el ambiente es agradable y recibirás consejos claros y prácticos para el día del parto."
     },
     {
-      question: "¿Qué cuidados necesito después de un tratamiento facial?",
-      answer: "Recomendamos evitar el sol directo, usar protección solar SPF50 y seguir la rutina de cuidados que te indicamos según tu tipo de piel.",
+      question: "¿Cuántas sesiones necesito para recuperarme de mi lesión?",
+      answer: "El número de sesiones depende de tu patología, tiempo de evolución y respuesta al tratamiento. En Centro Kine realizamos una valoración inicial completa para darte un pronóstico realista. Muchos de nuestros pacientes experimentan mejoras significativas desde la primera sesión, incluso en dolores crónicos que no se habían resuelto en otros centros. Durante el tratamiento vamos ajustando el plan según tu evolución."
     },
     {
-      question: "¿Ofrecéis tratamientos para novias?",
-      answer: "Sí, tenemos packs especiales para novias que incluyen tratamientos faciales, maquillaje de prueba y el día de la boda, manicura y más.",
+      question: "¿Qué diferencia a Centro Kine de otras clínicas de fisioterapia?",
+      answer: "Centro Kine cuenta con valoración de 5 estrellas en Google con 20 reseñas que destacan la profesionalidad de Mercedes, su dominio excepcional de técnicas manuales y su especialización en áreas como suelo pélvico, drenaje linfático y tratamiento del dolor. Ofrecemos trato cercano y divertido, explicaciones claras y comprensibles, tecnología de diagnóstico preciso y resultados visibles desde la primera sesión. Nuestras clientas destacan que resolvemos problemas que otros centros no han conseguido tratar."
     },
     {
-      question: "¿Las extensiones de pestañas dañan mis pestañas naturales?",
-      answer: "No, cuando se aplican correctamente por profesionales cualificados, las extensiones no dañan las pestañas naturales. Usamos adhesivos de alta calidad y técnicas seguras.",
+      question: "¿Necesito que me derive el médico para acudir a fisioterapia?",
+      answer: "No es necesario tener derivación médica para acudir a Centro Kine. Puedes solicitar cita directamente llamando al 600 07 15 36 o por WhatsApp. Realizaremos una valoración profesional completa de tu caso y si consideramos necesario coordinarnos con tu médico, te lo indicaremos. Trabajamos de forma autónoma pero siempre en coordinación con otros profesionales sanitarios cuando el caso lo requiere."
     },
     {
-      question: "¿Cuánto dura una sesión de tratamiento facial?",
-      answer: "Dependiendo del tratamiento, las sesiones duran entre 45 y 90 minutos. Incluimos tiempo para la consulta inicial y recomendaciones personalizadas.",
+      question: "¿Tratáis solo a mujeres o también a hombres?",
+      answer: "En Centro Kine tratamos tanto a mujeres como a hombres. Aunque somos especialistas en fisioterapia de la mujer, suelo pélvico y preparación al parto, también atendemos todo tipo de lesiones musculoesqueléticas, dolores de espalda, rehabilitación deportiva y problemas crónicos en pacientes de ambos sexos. Cada tratamiento se personaliza según las necesidades específicas de cada persona."
     },
     {
-      question: "¿Necesito cita previa?",
-      answer: "Sí, recomendamos siempre reservar cita previa para garantizar la disponibilidad y poder dedicarte el tiempo que mereces. Puedes reservar por teléfono o WhatsApp.",
-    },
+      question: "¿Qué tecnología utilizáis para el diagnóstico?",
+      answer: "Centro Kine cuenta con equipos de tecnología avanzada que nos permiten realizar diagnósticos precisos y complementar el tratamiento manual. Utilizamos aparatos especializados para valorar tu patología de forma objetiva y aplicamos electroterapia cuando es necesario para acelerar la recuperación. Esta combinación de técnicas manuales expertas y tecnología de vanguardia nos permite ofrecer los mejores resultados terapéuticos."
+    }
   ],
-
-  // === SEO ===
   seo: {
-    titleTemplate: "%s | Centro Estética CyM - Belleza en Puertollano",
-    defaultTitle: "Centro Estética CyM | Tu Centro de Belleza en Puertollano",
-    defaultDescription: "Centro de estética en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados. Cita previa: 629 61 04 71.",
+    titleTemplate: "%s | Centro Kine",
+    defaultTitle: "Centro Kine | Fisioterapia Especializada en Ciudad Real",
+    defaultDescription: "Clínica de fisioterapia en Ciudad Real especializada en suelo pélvico, preparación al parto y drenaje linfático. Valoración 5★ en Google. Resultados desde la 1ª sesión. ☎ 600 07 15 36",
     keywords: [
-      "centro estética Puertollano",
-      "micropigmentación Puertollano",
-      "microblading cejas Puertollano",
-      "depilación láser Puertollano",
-      "tratamientos faciales Puertollano",
-      "extensiones pestañas Puertollano",
-      "maquillaje profesional",
-      "manicura pedicura",
-      "tratamientos corporales",
-      "belleza Puertollano",
-      "Centro Estética CyM",
-      "estética Ciudad Real",
+      "fisioterapia Ciudad Real",
+      "Centro Kine",
+      "fisioterapia suelo pélvico Ciudad Real",
+      "preparación al parto Ciudad Real",
+      "drenaje linfático Ciudad Real",
+      "fisioterapeuta Ciudad Real",
+      "recuperación postparto Ciudad Real",
+      "tratamiento dolor espalda Ciudad Real",
+      "fisioterapia de la mujer Ciudad Real",
+      "clínica fisioterapia Ciudad Real",
+      "fisioterapia manual Ciudad Real",
+      "rehabilitación Ciudad Real"
     ],
-    ogImage: "/og-image.jpg",
+    ogImage: "/og-image.jpg"
   },
-
-  // === LEGAL ===
   legal: {
-    companyName: "Centro Estética CyM",
+    companyName: "Centro Kine",
     cif: "",
-    registeredAddress: "C. Numancia, 40, 13500 Puertollano, Ciudad Real",
+    registeredAddress: "C. Virgen de Gracia, 51, 13200 Manzanares, Ciudad Real, España, Ciudad Real, Toledo"
   },
-
-  // === UI COPY (driven by clinic type) ===
-  heroHeadline: ["Tu Centro de", "Belleza", "en Puertollano"],
-  heroDescription: "Realza tu belleza natural con tratamientos de micropigmentación, microblading y estética avanzada. Profesionales cualificadas y tecnología de vanguardia.",
-  specialty: "Micropigmentación",
-  ctaLabel: "Realza tu Belleza",
-  ctaHeadline: "¿Lista para brillar?",
-  ctaDescription: "Da el primer paso hacia tu mejor versión. Pide tu cita ahora y nuestro equipo te asesorará de forma personalizada.",
-  statsLabel: "Clientas",
-  schemaType: "BeautySalon",
+  heroHeadline: [
+    "Tu Centro de",
+    "Fisioterapia",
+    "en Ciudad Real"
+  ],
+  heroDescription: "En Centro Kine combinamos profesionalidad y cercanía para tu recuperación. Especialistas en fisioterapia de suelo pélvico, preparación al parto, drenaje linfático y tratamiento del dolor. Con Mercedes, fisioterapeuta experta y tecnología avanzada, conseguimos resultados reales desde la primera sesión.",
+  specialty: "Suelo Pélvico y Fisioterapia de la Mujer",
+  ctaLabel: "Tu Recuperación",
+  ctaHeadline: "¿Listo para recuperar tu bienestar?",
+  ctaDescription: "Solicita tu cita de valoración en Centro Kine. Te atenderemos de forma personalizada y diseñaremos el tratamiento más adecuado para ti. Primera sesión con resultados visibles.",
+  statsLabel: "Pacientes",
+  schemaType: "PhysicalTherapy",
   sectionCopy: {
     servicesLabel: "Nuestros Servicios",
     servicesTitle: "Tratamientos especializados",
-    servicesDescription: "Técnicas avanzadas de estética y belleza para realzar tu imagen y cuidar de ti.",
+    servicesDescription: "Soluciones profesionales adaptadas a tus necesidades de salud.",
     processLabel: "Cómo Trabajamos",
-    processTitle: "Tu camino hacia la belleza en 4 pasos",
+    processTitle: "Tu camino hacia la recuperación en 4 pasos",
     processDescription: "Un proceso simple y transparente diseñado para tu comodidad.",
     whyUsLabel: "Por Qué Elegirnos",
-    whyUsTitle: "Tu belleza, nuestra pasión",
-    whyUsDescription: "Combinamos experiencia, las mejores técnicas y un trato personalizado para realzar tu belleza natural.",
+    whyUsTitle: "Tu salud, nuestra prioridad",
+    whyUsDescription: "Combinamos experiencia, las mejores técnicas y un trato personalizado para cuidar de tu salud.",
     reviewsLabel: "Opiniones",
-    reviewsTitle: "Lo que dicen nuestras clientas",
+    reviewsTitle: "Lo que dicen nuestros pacientes",
     galleryLabel: "Instalaciones",
-    galleryTitle: "Conoce nuestro centro",
-    galleryDescription: "Un espacio diseñado para tu bienestar y relajación",
+    galleryTitle: "Conoce nuestra clínica",
+    galleryDescription: "Un espacio diseñado para tu bienestar y recuperación",
     faqLabel: "FAQ",
     faqTitle: "Preguntas frecuentes",
-    faqDescription: "Resolvemos las dudas más comunes de nuestras clientas.",
+    faqDescription: "Resolvemos las dudas más comunes de nuestros pacientes.",
     locationLabel: "Ubicación",
     locationTitle: "Cómo llegar",
     teamLabel: "Nuestro Equipo",
-    teamTitle: "Profesionales especializadas",
-    teamDescription: "Experiencia y pasión al servicio de tu belleza",
-  },
+    teamTitle: "Profesionales especializados",
+    teamDescription: "Experiencia y dedicación al servicio de tu salud"
+  }
 }
 
 export type Clinic = typeof clinic
